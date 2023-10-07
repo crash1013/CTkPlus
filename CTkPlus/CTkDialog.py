@@ -12,7 +12,7 @@ class CTkDialog(customtkinter.CTkToplevel):
         if message:
             customtkinter.CTkLabel(self, text=message, font=font).pack(padx=10, pady=10)
 
-        button = customtkinter.CTkButton(self, text="OK", command=self.destroy)
+        button = customtkinter.CTkButton(self, text="OK", command=self.destroy, font=font)
         button.pack(pady=10)
         
         # Center the dialog over parent

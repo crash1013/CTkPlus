@@ -81,7 +81,7 @@ class CTkPlusDemoApp(customtkinter.CTk):
             self.settings['font']['underline']= font_dict['underline']
             self.settings['font']['overstrike']= font_dict['overstrike']
             CTkSettings.save_settings(filename=os.path.join(self.current_directory, 'settings.json'), settings=self.settings)
-            if CTkYesNo(self, "Settings Changed", "Do you want to restart aply them now?", font=self.custom_font).result == True:
+            if CTkYesNo(self, "Settings Changed", "Do you want to restart and apply them now?", font=self.custom_font).result == True:
                 self.restart_app()
 
         else:
@@ -95,7 +95,7 @@ class CTkPlusDemoApp(customtkinter.CTk):
 
 if __name__=="__main__":
     app = CTkPlusDemoApp('light')
-    app.title("Work Instruction App")
+    app.title("CTkPlus Demo App")
     app.mainloop()
 
 

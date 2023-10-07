@@ -10,7 +10,7 @@ A collection of widgets for the CustomTkinter UI library, enhancing the look and
 * CTkYesNo
 
 ## The Demo Application
-* CTkPlusDemp.py
+* CTkPlusDemo.py
 
 ### CTkCalendar
 CTkCalendar is a widget for selecting a date. It is based on the module tkCalendar.

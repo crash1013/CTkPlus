@@ -3,16 +3,16 @@
 A collection of widgets and dialogs for the CustomTkinter UI library, enhancing the look and feel of traditional tkinter widgets.
 
 ## The widgets
-* CTkCalandar
-* CTkDialog
-* CTkFontPicker
-* CTkSettings
-* CTkYesNo
+ - [CTkCalendar](#ctkcalendar)
+ - [CTkFontPicker](#ctkfontpicker)
+ - CTkDialog
+ - CTkSettings
+ - CTkYesNo
 
 ## The Demo Application
 * CTkPlusDemo.py
 
-### CTkCalendar
+## CTkCalendar
 CTkCalendar is a widget for selecting a date. It is based on the module tkCalendar.
 
 ![CTkCalendar screenshot](images/CTkCalendar.png)
@@ -49,12 +49,12 @@ app.mainloop()
      
 ```
 
-### CTkFontPicker
+## CTkFontPicker
 A CustomTkinter dialog that provides an intuitive interface for users to select and preview fonts for the GUI.
 
 ![CTkFontPicker screenshot](images/CTkFontPicker.png)
 
-#### Using CTkFontPicker
+### Using CTkFontPicker
 
 ```python
 import customtkinter

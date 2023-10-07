@@ -5,10 +5,10 @@ A collection of widgets and dialogs for the CustomTkinter UI library, enhancing 
 ## The widgets
  - [CTkCalendar](#ctkcalendar)
  - [CTkFontPicker](#ctkfontpicker)
- - CTkDialog
+ - [CTkDialog](#ctkdialog)
+ - [CTkYesNo](#ctkyesno)
  - CTkSettings
- - CTkYesNo
-
+ 
 ## The Demo Application
 * CTkPlusDemo.py
 
@@ -109,7 +109,28 @@ app.title("CTkPlus CTkFontPicker")
 app.mainloop()
 ```
 
+## CTkDialog
+## CTkYesNo
 
+CTkDialog is a simple dialog that shows a message with an Ok button. CTkYesNo is a simple dialog that presents a question to the user who can respond yes or no.
+
+![CTkDialog screenshot](images/CTkDialog.png)
+![CTkYesNo screenshot](images/CTkYesNo.png)
+
+### Using CTkDialog and CTkYesNo
+
+```python
+    def update_theme(self):
+
+        dialog = CTkYesNo(self, message="Do you want to select a new theme?", title="Confirmation", font=self.font)
+        if dialog.result:
+            theme_name=customtkinter.filedialog.askopenfilename()
+            self.settings['theme'] = theme_name
+            self.theme_label.configure(text=theme_name)
+            # self.save_settings()
+            CTkDialog(self, 'Caveat', 'Theme will be used after restarting the app', font=self.font)
+
+```
 
 
 

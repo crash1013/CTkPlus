@@ -27,7 +27,7 @@ def center_on_parent(w, parent):
     # Set position
     w.geometry("+%d+%d" % (position_x, position_y))
 
-class DateSelection(customtkinter.CTkToplevel):
+class CTkCalendarDialog(customtkinter.CTkToplevel):
 
     def __init__(self, parent, title=None, font=None, initial_date=None):
         super().__init__()

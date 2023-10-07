@@ -12,7 +12,7 @@ class CTkFontPicker(customtkinter.CTkToplevel):
 
         if title:
             self.title(title)
-
+        self.result = None
         self.textfont = customtkinter.CTkFont(family=current_font.cget('family'), size=current_font.cget('size'), weight=current_font.cget('weight'))
         self.size = current_font.cget('size')
         self.family = current_font.cget('family')
@@ -105,16 +105,32 @@ class CTkFontPicker(customtkinter.CTkToplevel):
         self.cb_overstrike = customtkinter.CTkCheckBox(self.checkbox_frame, text='overstrike', command=self.overstrike_changed, onvalue=1, offvalue=0, variable=self.overstrike_var, font=current_font)
         self.cb_overstrike.grid(row=0, column=3, padx=10, pady=10, sticky='ew')
 
+        self.control_frame = customtkinter.CTkFrame(self)
+        self.control_frame.grid(row=3, column=0, padx=10, pady=10, sticky='ew')
+        self.control_frame.grid_columnconfigure([0,1], weight=1)
 
+        self.ok_button = customtkinter.CTkButton(self.control_frame, text='Ok', command=self.on_ok, font=current_font)
+        self.ok_button.grid(row=0, column=0, padx=10, pady=10, sticky='ew')
 
-        #self.geometry("+%d+%d" % (parent.winfo_rootx() + 300, parent.winfo_rooty() + 200))
-        #self.geometry("+%d+%d" % (parent.winfo_rootx() + parent.winfo_width()/2, parent.winfo_rooty() + parent.winfo_height()/2))
+        self.cancel_button = customtkinter.CTkButton(self.control_frame, text='Cancel', command=self.on_cancel, font=current_font)
+        self.cancel_button.grid(row=0, column=1, padx=10, pady=10, sticky='ew')
+
+        self.result = None
+
         self.center_on_parent(parent)        
 
         
-        self.protocol("WM_DELETE_WINDOW", self.destroy)
+        self.protocol("WM_DELETE_WINDOW", self.on_cancel)
         self.grab_set()
         self.wait_window(self)
+
+    def on_ok(self):
+        self.result = True
+        self.destroy()
+
+    def on_cancel(self):
+        self.result = False
+        self.destroy()
 
     def slant_changed(self):
         self.slant = self.cb_italic.get()

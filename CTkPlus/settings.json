@@ -1,6 +1,7 @@
 {
     "mode": "light",
-    "theme": "user_themes/Greengage.json",
+    "theme": "E:/work/CTkPlus/CTkPlus/user_themes/NightTrain.json",
+    "geometry": "429x191+380+380",
     "font": {
         "family": "Righteous",
         "size": 18,
@@ -8,6 +9,5 @@
         "slant": "roman",
         "underline": 0,
         "overstrike": 0
-    },
-    "geometry": "994x578+266+266"
+    }
 }

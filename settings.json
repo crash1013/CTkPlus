@@ -1,0 +1,13 @@
+{
+    "mode": "dark",
+    "theme": "user_themes/GreyGhost.json",
+    "geometry": null,
+    "font": {
+        "family": "Righteous",
+        "size": 18,
+        "weight": "normal",
+        "slant": "roman",
+        "underline": false,
+        "overstrike": false
+    }
+}

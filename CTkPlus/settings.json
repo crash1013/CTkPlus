@@ -1,6 +1,6 @@
 {
     "mode": "light",
-    "theme": "E:/work/CTkPlus/CTkPlus/user_themes/NightTrain.json",
+    "theme": "user_themes/NightTrain.json",
     "geometry": "429x191+380+380",
     "font": {
         "family": "Righteous",

@@ -1,0 +1,13 @@
+{
+    "mode": "light",
+    "theme": "user_themes/Greengage.json",
+    "font": {
+        "family": "Righteous",
+        "size": 18,
+        "weight": "normal",
+        "slant": "roman",
+        "underline": 0,
+        "overstrike": 0
+    },
+    "geometry": "994x578+266+266"
+}

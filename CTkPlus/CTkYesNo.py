@@ -36,6 +36,7 @@ class CTkYesNo(customtkinter.CTkToplevel):
         self.center_on_parent(parent)
         
         self.protocol("WM_DELETE_WINDOW", self.no_clicked)  # Treat window close as 'No'
+        self.wait_visibility()
         self.grab_set()
         self.wait_window(self)
 

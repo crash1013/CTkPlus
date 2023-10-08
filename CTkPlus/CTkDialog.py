@@ -22,6 +22,7 @@ class CTkDialog(customtkinter.CTkToplevel):
 
         
         self.protocol("WM_DELETE_WINDOW", self.destroy)
+        self.wait_visibility()
         self.grab_set()
         self.wait_window(self)
 

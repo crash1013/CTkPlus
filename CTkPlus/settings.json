@@ -1,7 +1,7 @@
 {
     "mode": "light",
-    "theme": "E:/work/CTkPlus/CTkPlus/user_themes/DaynNight.json",
-    "geometry": "429x191+380+380",
+    "theme": "/home/crash/work/CTkPlus/CTkPlus/user_themes/DaynNight.json",
+    "geometry": "428x240+380+380",
     "font": {
         "family": "Righteous",
         "size": 18,

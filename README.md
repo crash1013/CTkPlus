@@ -11,6 +11,11 @@ A collection of widgets and dialogs for the CustomTkinter UI library, enhancing 
  
 ## The Demo Application
  - [CTkPlusDemo](#ctkplusdemo)]
+
+## More Information
+ - [Requirements](#requirements_and_dependencies)
+ - [Credits](#credits)
+ - 
 ______
 ## CTkCalendar
 CTkCalendar is a dialog used to select a date. It is based on the module tkCalendar.
@@ -188,4 +193,6 @@ ______
 | :---------------- | :------------------------- | :----------------------------------------------------------------------------|
 | ctk_theme_bullder | Themes included in CTkPlus | [ctk_theme_builder at GitHub](https://github.com/avalon60/ctk_theme_builder) |
 
+## Additional Fonts
 
+If you like the Google Righteous Font it can be installed 

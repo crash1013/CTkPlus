@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "mode": "light",
     "theme": "",
@@ -10,4 +11,18 @@
         "underline": 0,
         "overstrike": 0
     }
+=======
+{
+    "mode": "light",
+    "theme": "/home/crash/work/CTkPlus/CTkPlus/user_themes/DaynNight.json",
+    "geometry": "428x240+380+380",
+    "font": {
+        "family": "Righteous",
+        "size": 18,
+        "weight": "normal",
+        "slant": "roman",
+        "underline": 0,
+        "overstrike": 0
+    }
+>>>>>>> 3e11c99032bfeffec067861358f383f9b5d7a4e9
 }

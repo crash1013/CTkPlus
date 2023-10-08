@@ -46,6 +46,7 @@ class CTkCalendarDialog(customtkinter.CTkToplevel):
         self.button.grid(row=1, column=0, padx=10, pady=10, sticky='ew')
 
         center_on_parent(self, parent)
+        self.wait_visibility()
         self.grab_set()
         self.wait_window(self)
 

@@ -150,6 +150,7 @@ class CTkSettings(customtkinter.CTkToplevel):
 
         
         self.protocol("WM_DELETE_WINDOW", self.on_cancel)
+        self.wait_visibility()
         self.grab_set()
         self.wait_window(self)
 

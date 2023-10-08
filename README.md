@@ -17,7 +17,7 @@ CTkCalendar is a dialog used to select a date. It is based on the module tkCalen
 
 ![CTkCalendar screenshot](images/CTkCalendar.png)
 
-#### Using CTkCalendar
+### Using CTkCalendar
 
 ```python
 import customtkinter

@@ -5,8 +5,9 @@ from tkinter import ttk
 import customtkinter
 from datetime import datetime
 from datetime import date
+import os
 
-import CTkMessagebox
+from CTkDialog import CTkDialog
 
 from tkcalendar import Calendar, DateEntry
 
@@ -56,7 +57,8 @@ class TestDateWidget(customtkinter.CTk):
         
     def __init__(self, mode='dark'):
         super().__init__()
-        customtkinter.set_default_color_theme('user_themes/DaynNight.json')
+      
+        customtkinter.set_default_color_theme('blue')
         customtkinter.set_appearance_mode(mode_string=mode)
         self.custom_font = customtkinter.CTkFont(family='Righteous', size=18)
         self.geometry('250x125')
@@ -72,8 +74,8 @@ class TestDateWidget(customtkinter.CTk):
         self.selected_date = date(year=today.year, month=today.month, day=today.day) 
 
     def get_date(self):
-        self.selected_date = DateSelection(self, "Select a Date", font=self.custom_font, initial_date=date.today()).result
-        CTkMessagebox.CTkMessagebox(self, title="Selected Date", message=f"You selected '{self.selected_date}'", font=self.custom_font)
+        self.selected_date = CTkCalendarDialog(self, "Select a Date", font=self.custom_font, initial_date=date.today()).result
+        CTkDialog(self, title="Selected Date", message=f"You selected '{self.selected_date}'", font=self.custom_font)
         return
 
     def on_ok(self):
@@ -81,6 +83,6 @@ class TestDateWidget(customtkinter.CTk):
         self.destroy()
 
 if __name__=="__main__":
-    app = TestDateWidget('light')
+    app = TestDateWidget('blue')
     app.title("Work Instruction App")
     app.mainloop()

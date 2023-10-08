@@ -1,5 +1,6 @@
 # CTkPlusDemo.py
 import os
+import sys
 from datetime import date
 
 import customtkinter
@@ -87,6 +88,9 @@ class CTkPlusDemoApp(customtkinter.CTk):
         else:
             CTkDialog(self, title='Failure', message="Settings were not changed!", font=self.custom_font)
         
+    def restart_app(self):
+        """Restart the current program."""
+        os.execl(sys.executable, sys.executable, *sys.argv)
 
     def on_done(self):
         self.settings['geometry'] = self.geometry()

@@ -178,9 +178,14 @@ ______
 
 # Requirements and Dependencies
 
-| Module        | Installation              | Project                                                                   |
-| :------------ | :-------------------------| :-------------------------------------------------------------------------|
-| CustomTkinter | pip install customtkinter | [CustomTkinter at Github](https://github.com/TomSchimansky/CustomTkinter) |
-| tkCalendar    | pip install tkcalendar    | [tkCalendar at Github](https://github.com/j4321/tkcalendar)               |
+| Module            | Installation              | Project                                                                   |
+| :---------------- | :-------------------------| :-------------------------------------------------------------------------|
+| CustomTkinter     | pip install customtkinter | [CustomTkinter at Github](https://github.com/TomSchimansky/CustomTkinter) |
+| tkCalendar        | pip install tkcalendar    | [tkCalendar at Github](https://github.com/j4321/tkcalendar)               |
+
+# Credits
+! Theme Source      | Notes                      | Project                                                                      |
+| :---------------- | :------------------------- | :----------------------------------------------------------------------------|
+| ctk_theme_bullder | Themes included in CTkPlus | [ctk_theme_builder at GitHub](https://github.com/avalon60/ctk_theme_builder) |
 
 

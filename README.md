@@ -11,7 +11,7 @@ A collection of widgets and dialogs for the CustomTkinter UI library, enhancing 
  
 ## The Demo Application
  - CTkPlusDemo
-
+______
 ## CTkCalendar
 CTkCalendar is a dialog used to select a date. It is based on the module tkCalendar.
 
@@ -137,6 +137,8 @@ CTKSettings is a dialog that demonstrates all the widgets and dialogs in the rep
 
 ![CTkSettings screenshot](images/CTkSettings.png)
 
+### Using CTkSettings
+
 ```python
     def on_settings(self):
         dialog = CTkSettings(self, settings=self.settings, font=self.custom_font)
@@ -172,7 +174,9 @@ The demo application provides buttons to launch the dialog boxes that demonstrat
 
 ![CTkPlusDemo_screenshot](images/CTkPlusDemo.png)
 
-### Requirements and Dependencies
+______
+
+# Requirements and Dependencies
 
 | Module        | Installation              | Project                                                                   |
 | :------------ | :-------------------------| :-------------------------------------------------------------------------|

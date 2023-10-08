@@ -10,7 +10,7 @@ A collection of widgets and dialogs for the CustomTkinter UI library, enhancing 
  - [CTkSettings](#ctksettings)
  
 ## The Demo Application
- - CTkPlusDemo
+ - [CTkPlusDemo](#ctkplusdemo)]
 ______
 ## CTkCalendar
 CTkCalendar is a dialog used to select a date. It is based on the module tkCalendar.

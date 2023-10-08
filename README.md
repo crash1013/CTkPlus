@@ -7,13 +7,13 @@ A collection of widgets and dialogs for the CustomTkinter UI library, enhancing 
  - [CTkFontPicker](#ctkfontpicker)
  - [CTkDialog](#ctkdialog)
  - [CTkYesNo](#ctkyesno)
- - CTkSettings
+ - [CTkSettings](#ctksettings)
  
 ## The Demo Application
-* CTkPlusDemo.py
+ - CTkPlusDemo
 
 ## CTkCalendar
-CTkCalendar is a widget for selecting a date. It is based on the module tkCalendar.
+CTkCalendar is a dialog used to select a date. It is based on the module tkCalendar.
 
 ![CTkCalendar screenshot](images/CTkCalendar.png)
 
@@ -131,6 +131,52 @@ CTkDialog is a simple dialog that shows a message with an Ok button. CTkYesNo is
             CTkDialog(self, 'Caveat', 'Theme will be used after restarting the app', font=self.font)
 
 ```
+## CTkSettings
 
+CTKSettings is a dialog that demonstrates all the widgets and dialogs in the repository. CTkSettings allows you to  dynamically change the appearance of the CustomTkinter application and serialize the appearance settings. Most settings are applied when they are changed. The theme can only be applied at startup so CTkSettings demonstrates how to restart the application to apply the settings immediately.
+
+![CTkSettings screenshot](images/CTkSettings.png)
+
+```python
+    def on_settings(self):
+        dialog = CTkSettings(self, settings=self.settings, font=self.custom_font)
+
+        if dialog.result:
+            self.settings = dialog.settings
+            font_dict = self.settings['font']
+            customtkinter.set_appearance_mode(mode_string=self.settings['mode'])
+            self.custom_font = customtkinter.CTkFont(family=font_dict['family'], 
+                                                    size=font_dict['size'],
+                                                    weight=font_dict['weight'],
+                                                    slant=font_dict['slant'],
+                                                    underline=font_dict['underline'],
+                                                    overstrike=font_dict['overstrike'])
+            CTkDialog(self, title='Success', message="Settings updated!", font=self.custom_font)
+            self.settings['font']['family']= font_dict['family']
+            self.settings['font']['size']= font_dict['size']
+            self.settings['font']['weight']= font_dict['weight']
+            self.settings['font']['slant']= font_dict['slant']
+            self.settings['font']['underline']= font_dict['underline']
+            self.settings['font']['overstrike']= font_dict['overstrike']
+            CTkSettings.save_settings(filename=os.path.join(self.current_directory, 'settings.json'), settings=self.settings)
+            if CTkYesNo(self, "Settings Changed", "Do you want to restart and apply them now?", font=self.custom_font).result == True:
+                self.restart_app()
+
+        else:
+            CTkDialog(self, title='Failure', message="Settings were not changed!", font=self.custom_font)
+```
+
+## CTkPlusDemo
+
+The demo application provides buttons to launch the dialog boxes that demonstrate the widgets and dialogs described above.
+
+![CTkPlusDemo_screenshot](images/CTkPlusDemo.png)
+
+### Requirements and Dependencies
+
+| Module        | Installation              | Project                                                                   |
+| :------------ | :-------------------------| :-------------------------------------------------------------------------|
+| CustomTkinter | pip install customtkinter | [CustomTkinter at Github](https://github.com/TomSchimansky/CustomTkinter) |
+| tkCalendar    | pip install tkcalendar    | [tkCalendar at Github](https://github.com/j4321/tkcalendar)               |
 
 

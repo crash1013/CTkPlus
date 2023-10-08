@@ -33,7 +33,7 @@ class CTkCalendarDialog(customtkinter.CTkToplevel):
     def __init__(self, parent, title=None, font=None, initial_date=None):
         super().__init__()
         self.result = None  # Store the result here 
-
+        self.transient(parent)
         if initial_date is None:
             date = date.today()
         self.title(title)

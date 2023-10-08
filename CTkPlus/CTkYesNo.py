@@ -7,7 +7,7 @@ class CTkYesNo(customtkinter.CTkToplevel):
         super().__init__(parent)
         #self.transient(parent)
         self.result = None  # Store the result here (True for Yes, False for No)
-
+        self.transient(parent)
         self.title(title)
         self.geometry("400x120")
 

@@ -65,7 +65,7 @@ class CTkSettings(customtkinter.CTkToplevel):
         if not isinstance(settings, dict):
             CTkDialog(title="Error", message='Program error, settings must be a dictionary', icon='cancel', font=font)
             return
-
+        self.transient(parent)
         self.result = False
         self.font = font
         self.backup_settings = settings.copy()
@@ -148,8 +148,8 @@ class CTkSettings(customtkinter.CTkToplevel):
 
         self.center_on_parent(parent)        
 
-        
         self.protocol("WM_DELETE_WINDOW", self.on_cancel)
+        
         self.wait_visibility()
         self.grab_set()
         self.wait_window(self)

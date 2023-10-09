@@ -182,10 +182,11 @@ The demo application provides buttons to launch the dialog boxes that demonstrat
 ______
 
 ## Requirements
-| Module            | Installation              | Project                                                                   |
-| :---------------- | :-------------------------| :-------------------------------------------------------------------------|
-| CustomTkinter     | pip install customtkinter | [CustomTkinter at Github](https://github.com/TomSchimansky/CustomTkinter) |
-| tkCalendar        | pip install tkcalendar    | [tkCalendar at Github](https://github.com/j4321/tkcalendar)               |
+| Module             | Installation              | Project                                                                   |
+| :----------------- | :-------------------------| :-------------------------------------------------------------------------|
+| Python 3.10 and up | Download and install      | [Python.org](https://www.python.org/downloads/)
+| CustomTkinter      | pip install customtkinter | [CustomTkinter at Github](https://github.com/TomSchimansky/CustomTkinter) |
+| tkCalendar         | pip install tkcalendar    | [tkCalendar at Github](https://github.com/j4321/tkcalendar)               |
 
 ## Credits
 | Theme Source      | Notes                      | Project                                                                      |

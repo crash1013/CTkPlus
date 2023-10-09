@@ -10,7 +10,7 @@ A collection of widgets and dialogs for the CustomTkinter UI library, enhancing 
  - [CTkSettings](#ctksettings)
  
 ## The Demo Application
- - [CTkPlusDemo](#ctkplusdemo)]
+ - [CTkPlusDemo](#ctkplusdemo)
 
 ## More Information
  - [Requirements](#requirements)

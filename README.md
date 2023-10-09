@@ -13,9 +13,9 @@ A collection of widgets and dialogs for the CustomTkinter UI library, enhancing 
  - [CTkPlusDemo](#ctkplusdemo)]
 
 ## More Information
- - [Requirements](#requirements_and_dependencies)
+ - [Requirements](#requirements)
  - [Credits](#credits)
- - 
+ - [Additional Fonts](#additional-fonts)
 ______
 ## CTkCalendar
 CTkCalendar is a dialog used to select a date. It is based on the module tkCalendar.
@@ -181,18 +181,27 @@ The demo application provides buttons to launch the dialog boxes that demonstrat
 
 ______
 
-# Requirements and Dependencies
-
+## Requirements
 | Module            | Installation              | Project                                                                   |
 | :---------------- | :-------------------------| :-------------------------------------------------------------------------|
 | CustomTkinter     | pip install customtkinter | [CustomTkinter at Github](https://github.com/TomSchimansky/CustomTkinter) |
 | tkCalendar        | pip install tkcalendar    | [tkCalendar at Github](https://github.com/j4321/tkcalendar)               |
 
-# Credits
+## Credits
 | Theme Source      | Notes                      | Project                                                                      |
 | :---------------- | :------------------------- | :----------------------------------------------------------------------------|
 | ctk_theme_bullder | Themes included in CTkPlus | [ctk_theme_builder at GitHub](https://github.com/avalon60/ctk_theme_builder) |
 
 ## Additional Fonts
 
-If you like the Google Righteous Font it can be installed 
+If you like the Google Righteous Font it can be easily installed on Windows by simply right clicking the .ttf file and selecting install from the context menu.
+Installing the font on Linux takes a little extra work in a terminal windows.
+
+```bash
+cd CTkPlus/Fonts/Righteous
+cp Righteous_Regular.ttf ~/.fonts
+fc-cache -v -f
+# validate the font
+fc-list | grep Righteous
+
+```

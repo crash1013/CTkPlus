@@ -189,7 +189,7 @@ ______
 | tkCalendar        | pip install tkcalendar    | [tkCalendar at Github](https://github.com/j4321/tkcalendar)               |
 
 # Credits
-! Theme Source      | Notes                      | Project                                                                      |
+| Theme Source      | Notes                      | Project                                                                      |
 | :---------------- | :------------------------- | :----------------------------------------------------------------------------|
 | ctk_theme_bullder | Themes included in CTkPlus | [ctk_theme_builder at GitHub](https://github.com/avalon60/ctk_theme_builder) |
 

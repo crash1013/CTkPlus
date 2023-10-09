@@ -195,7 +195,7 @@ ______
 ## Additional Fonts
 
 If you like the Google Righteous Font it can be easily installed on Windows by simply right clicking the .ttf file and selecting install from the context menu.
-Installing the font on Linux takes a little extra work in a terminal windows.
+Installing the font on Linux takes a little extra work in a terminal window.
 
 ```bash
 cd CTkPlus/Fonts/Righteous

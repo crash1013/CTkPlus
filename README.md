@@ -16,6 +16,7 @@ A collection of widgets and dialogs for the CustomTkinter UI library, enhancing 
  - [Requirements](#requirements)
  - [Credits](#credits)
  - [Additional Fonts](#additional-fonts)
+ - [Contact](#contact)
 ______
 ## CTkCalendar
 CTkCalendar is a dialog used to select a date. It is based on the module tkCalendar.
@@ -206,3 +207,5 @@ fc-cache -v -f
 fc-list | grep Righteous
 
 ```
+## Contact
+Reach out for queries or feedback crash@triad.rr.com
